@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Atualizações - Liberação de Link</title>
+<style>
+    body {
+        background-color: #000;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 30px;
+    }
+    .logo {
+        max-width: 200px;
+        margin: 20px auto;
+        display: block;
+        border-radius: 50%;
+        border: 4px solid #0072ff;
+        box-shadow: 0 0 20px #0072ff;
+        animation: rotate 20s linear infinite;
+    }
+
+    /* Animação de rotação leve */
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    h2 {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    button {
+        padding: 12px 25px;
+        font-size: 18px;
+        background: linear-gradient(90deg, #00c6ff, #0072ff);
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        transition: transform 0.8s ease;
+    }
+    button:hover {
+        transform: scale(1.05);
+    }
+    #linkFinal {
+        display: none;
+        margin-top: 30px;
+    }
+</style>
+</head>
+<body>
+
+<!-- Foto de perfil com rotação leve -->
+<img src="C:\Users\adson\OneDrive\Documentos\Logotipo-Moda-Loja-Minimalista-Preto-e-Branco.png" alt="Foto de Perfil" class="logo">
+
+<h2>Siga nosso Instagram para liberar o conteúdo exclusivo!</h2>
+
+<!-- Botão para seguir no Instagram -->
+<a href="https://www.instagram.com/tech_atualizacoes_?igsh=MXJoZTBicmdhN2h1&utm_source=qr" target="_blank">
+    <button id="seguirBtn">Seguir no Instagram</button>
+</a>
+
+<!-- Botão escondido para acessar o link final -->
+<div id="linkFinal">
+    <h3>Obrigado por seguir!</h3>
+    <a href="https://techatualizacoes2.lojavirtualnuvem.com.br/produtos/atualize-seu-pendrive-com-melhores-hits-do-momento-em-2025/" target="_blank">
+        <button>Acessar o Conteúdo</button>
+    </a>
+</div>
+
+<script>
+    const linkFinal = document.getElementById('linkFinal');
+    const botaoSeguir = document.getElementById('seguirBtn');
+
+    botaoSeguir.addEventListener('click', () => {
+        setTimeout(() => {
+            linkFinal.style.display = 'block';
+        }, 10000); // 10 segundos
+    });
+</script>
+
+</body>
+</html>
